@@ -7,7 +7,11 @@ const server = http.createServer((req, res) => {
     "Content-Type": "text/html"
   });
 
-  res.end(`<h1>Hello Team !! This is nodejs App in multiENV( QA )</h1>`);
+  res.end(`
+    <body style="background-color: #e09155;">
+    <h1>Hello Team !! This is nodejs+docker+ECR multiENV Project</h1>
+    </body>
+    `);
 });
 
 server.listen(PORT, "0.0.0.0", () => {
